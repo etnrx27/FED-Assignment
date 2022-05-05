@@ -1,0 +1,96 @@
+﻿
+/* header styles */
+header {
+    font-family: Verdana, Arial, serif;
+    color: white;
+    background-size: cover;
+    text-align: center;
+    background-color: #F4C2C2;
+}
+#mainheadh1 {
+    font-family: 'Overlock', cursive;
+    padding: 40px;
+    font-size: 40px;
+    margin: 0 auto;
+    text-shadow: 2px 2px grey;
+    margin-right:auto;
+    margin-left:auto;
+    width:60%;
+}
+/* nav styles */
+.navbar-custom {
+    background-color: #F4C2C2;
+    padding: 0.25em;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: #E94343;
+    border: 1px solid;
+    border-radius: .5em;
+    margin: 0.5em;
+    padding: 0.2em;
+    min-width: 8em;
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+
+}
+
+/* change the hamburger button outline color when it is clicked */
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline-color: #E94343;
+    margin: 0.5em;
+}
+
+/* Responsive css */
+@media screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+}
+#animation {
+    width: 100px;
+    height: 100px;
+    padding: 40px;
+    text-align: end;
+    font-size: 50px;
+    color: white;
+    font-family: "SegoeUI Bold", Sans-serif;
+    margin: 0 auto;
+    background-color: #87458b;
+    animation-name: spin;
+    animation-duration: 4500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float:right;
+    margin-top:0.6em;
+    margin-right:1em;
+}
+
+#schofICT {
+    text-align: center;
+    font-family: "SegoeUI Bold", Sans-serif;
+    color: #87458b;
+    margin: 0;
+    float:right;
+    margin-top: 1em;
+    margin-right: 1em;
+    padding: 5px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

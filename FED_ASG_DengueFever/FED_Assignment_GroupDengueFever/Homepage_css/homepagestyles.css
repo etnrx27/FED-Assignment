@@ -1,0 +1,51 @@
+﻿body
+{
+}
+.content-wrap{
+    background-color:#E1E1E1;
+    padding-bottom: 13em;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6em;
+    width: 300px;
+}
+#homepageh1 {
+    text-align: center;
+    padding-top: 4em;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+   
+#homepageh3 {
+    font-size: 20px;
+    text-align: center;
+}
+#homepagep {
+    text-align: center;
+    float: right;
+    padding: 20px;
+    width: 200px;
+    padding-right: 30px;
+}
+#homepagep:hover{
+    color:#e59092;
+}
+
+#homepagea{
+    color: #e59092;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.importance{
+    color: #E94343;
+    font-weight: 700;
+}
+.emphasise {
+    color: #e59092;
+    font-weight: 500;
+}
+
+

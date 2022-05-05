@@ -1,0 +1,19 @@
+﻿footer {
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Arial, serif;
+    padding: 1em;
+    background-color: #F4C2C2;
+}
+
+h4 {
+    text-shadow: 1px 1px grey;
+}
+
+h5 {
+    color: #E94343;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Verdana, Arial, serif;
+    text-shadow: 1px 1px grey;
+}

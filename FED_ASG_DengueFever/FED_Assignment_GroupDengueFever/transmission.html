@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Rachel" />
+    <meta name="description" content="How dengue is transmitted" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengue Transmission</title>
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Rachelcss/transmissionPage.css" />
+    <script src="Racheljs/jquery-3.3.1.min.js"></script>
+    <script src="Racheljs/bootstrap.min.js"></script>
+    <script src="Racheljs/transmission.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Fredoka+One&family=Overlock&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&family=Fredoka+One&family=Overlock&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div w3-include-html="header.html"></div>
+    <section class="content1">
+        <h1>About dengue</h1>
+        <p>
+            Dengue virus is transmitted to humans with the bite of an infective mosquito. It is a common illness in more than
+            100 countries around the world, with 40% of the world's population living in areas with a higher risk
+            of dengue. Dengue is counted as one of the serious disease as every year, up to 400 million people get infected with dengue
+            and approximately 100 million people get sick, and 22,000 died from severe dengue. As there are 4 types of dengue virus (DENV1 - 4), a person
+            can be infected with dengue virus up to 4 times in his/her lifetime.
+        </p>
+    </section>
+    <section class="content2">
+        <h2 class="titleHeader">How dengue is transmitted</h2>
+        <ul id="tmList">
+            <li id="tmItems">Humans get infected with dengue fever by getting a bite of an infected Aedes mosquito.</li>
+            <li id="tmItems">Symptoms may show after a period of 3 - 14 days.</li>
+            <li id="tmItems">Dengue fever DOES NOT spread from person to person.</li>
+            <li id="tmItems">Infected pregnant woman may transmit the virus to their fetus during pregenancy.</li>
+        </ul>
+        <img class="transmission" id="PersonTalk" src="RachelImages/PersonTalk.png" alt="" />
+        <img class="transmission" id="BitePerson" src="RachelImages/BitePerson.png" alt="" />
+    </section>
+    <section>
+        <h2>About Aedes Mosquito</h2>
+        <ul id="tmList">
+            <li id="tmItems">
+                There are 2 types:
+                <ul id="inner">
+                    <li id="tmItems">Aedes Aegypti</li>
+                    <li id="tmItems">Aedes Albopictus</li>
+                </ul>
+                <img class="mosquito" id="Aedes" src="RachelImages/Aedes.jpg" alt="" />
+            </li>
+            <li id="tmItems">Both have black and white stripes on their bodies and legs, and narrow black body</li>
+            <li id="tmItems">There is a slight difference in size</li>
+            <li id="tmItems">They are the main culprit of spreading viruses like denuge, zika, chikungunya, etc</li>
+            <li id="tmItems">Mosquitoes become infected when they bite a person infected with the virus.</li>
+            <li id="tmItems">As they prefer to feed on people, they are more likely to spread viruses compared to other mosquitos</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th colspan="4">Differences between Aedes and other mosquitos</th>
+            </tr>
+            <tr>
+                <td class="tableHeader" colspan="2">Aedes</td>
+                <td class="tableHeader" colspan="2">Other Mosquitos</td>
+            </tr>
+            <tr>
+                <td colspan="2">Smaller in size</td>
+                <td colspan="2">Larger than Aedes</td>
+            </tr>
+            <tr>
+                <td colspan="2">White stripes on the body</td>
+                <td colspan="2">Does not have white stripes on the body</td>
+            </tr>
+            <tr>
+                <td colspan="2">Active during the day</td>
+                <td colspan="2">Active during the day and night</td>
+            </tr>
+            <tr>
+                <td colspan="2">Bite is much redder and itchy</td>
+                <td colspan="2">Bite is red and a little itchy</td>
+            </tr>
+            <tr>
+                <td colspan="2">Usually bite on the ankles and elbows.</td>
+                <td colspan="2">Usually bite on ankles, behind the knees and back of our necks</td>
+            </tr>
+        </table>
+    </section>
+    <div id="quizWrapper">
+        <h2 class="titleHeader">Are you able to differentiate between a dengue mosquito and normal mosquito?</h2>
+        <section class="wrapForm">
+
+            <form onsubmit="submitForm(); return false">
+                <h4>Aedes Mosquito</h4><hr />
+                <label for="size">Size</label>
+                <select name="size" id="size" required>
+                    <option value="" selected disabled> Please select...</option>
+                    <option value="small">Small</option>
+                    <option value="large">Large</option>
+                </select>
+                <br /><br />
+                <label for="body">Body Feature</label>
+                <select name="body" id="body" required>
+                    <option value="" selected disabled> Please select...</option>
+                    <option value="black">Black stripes</option>
+                    <option value="blackandwhite">Black and white stripes</option>
+                </select>
+                <br /><br />
+                <label for="activity">Active Hours</label>
+                <select name="activity" id="active" required>
+                    <option value="" selected disabled> Please select...</option>
+                    <option value="day">Day</option>
+                    <option value="dayandN">Day and night</option>
+                </select>
+                <br /><br />
+                <label for="appearance">Bite Appearance</label>
+                <select name="appearance" id="appearance" required>
+                    <option value="" selected disabled> Please select...</option>
+                    <option value="reditchy">Red and itchy</option>
+                    <option value="redderitchy">Redder and more itchy</option>
+                </select>
+                <br /><br />
+                <label for="habits">Bite Habits</label>
+                <select name="habits" id="habits" required>
+                    <option value="" selected disabled> Please select...</option>
+                    <option value="elbow">Ankle and Elbow</option>
+                    <option value="neck">Ankle, Elbow, and neck</option>
+                </select>
+                <br /><br />
+                <input type="submit" value="Submit">
+
+                <div class="messageOutput">
+                    <p id="sizeMessage"></p>
+                    <p id="bodyMessage"></p>
+                    <p id="activeMessage"></p>
+                    <p id="appearanceMessage"></p>
+                    <p id="habitsMessage"></p>
+                </div>
+            </form>
+        </section>
+        <br />
+    </div>
+    <section class="content5">
+        <h4>For more details, click on the links below!</h4>
+        <br />
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-3">
+                <a href="https://www.cdc.gov/dengue/about/index.html" class="btn btn-outline-info btn-block" target="_blank" role="button" aria-pressed="true">About Dengue</a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.cdc.gov/dengue/transmission/index.html#:~:text=Through%20Mosquito%20Bites&text=Dengue%20viruses%20are%20spread%20to,albopictus" class="btn btn-outline-info btn-block" target="_blank" role="button" aria-pressed="true">About Dengue Transmission</a>
+            </div>
+            <div class="col-sm-3">
+                <a href="https://www.differencebetween.com/difference-between-dengue-mosquito-and-vs-normal-mosquito/#Similarities%20Between%20Dengue%20Mosquito%20and%20Normal%20Mosquito" target="_blank" class="btn btn-outline-info btn-block" role="button" aria-pressed="true">Mosquito differences and similarities</a>
+            </div>
+        </div>
+        <br />
+    </section>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+
+</body>
+</html>
