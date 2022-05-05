@@ -1,0 +1,157 @@
+﻿/*Mosquito Animations*/
+
+.animate img{
+    height:50px;
+    width:50px;
+    float:left;
+    margin-left:40px;
+}
+.animate_backwards img {
+    height:50px;
+    width:50px;
+    float:right;
+    margin-right:40px;
+}
+.animate{
+    position: absolute;
+    animation-name: mosquito;
+    animation-duration:10s;
+    animation-iteration-count:infinite;
+}
+.animate_backwards {
+    position: absolute;
+    animation-name: mosquito_backwards;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mosquito {
+    50% {transform: perspective(50px) scaleX(-1)}
+    100%{transform: perspective(50px) scaleX(1)}
+}
+@keyframes mosquito_backwards {
+    50% {transform:perspective(50px) scaleX(-1)}
+    100%{transform: perspective(50px) scaleX(1)}
+}
+.Intro img{
+    float:right;
+    padding:15px;
+    margin-top:6em;
+    max-width:12em;
+}
+.content-wrap{
+    padding:1em;
+    background-color:#E1E1E1;
+}
+.content-wrap h3 {
+    font-family: 'Overlock', cursive;
+}
+.content-wrap p{
+    font-family: 'Amaranth',sans-serif;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white
+}
+.header {
+    font-family: 'Fredoka One', cursive;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #E94343
+}
+.MaleMosquitoes img {
+    float:right;
+    margin-left: 20px;
+    max-height: 500px;
+    max-width: 300px;
+    padding: 20px;
+}
+.officers .carousel {
+    float: left;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.Five-Step .carousel {
+    float:right;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+.carousel h3 {
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+.Repellent img{
+    float: left;
+    padding: 15px;
+    max-width: 230px;
+}
+.FeedbackForm{
+    background-color:white;
+    padding:15px;
+}
+.FeedbackForm input{
+    margin-left:40px;
+}
+label {
+    font-family: 'Amaranth',sans-serif;
+    margin-left: 20px;
+    width: 70px;
+}
+textarea{
+    margin-left: 40px;
+}
+.table {
+    padding: 20px;
+    background-color:white;
+}
+caption {
+    font-family: 'Amaranth',sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+}
+th:hover, td:hover{
+    background-color: #e59092;
+}
+tr, th, td {
+    font-family: 'Amaranth',sans-serif;
+    border: thin solid black;
+    padding: 10px;
+}
+.links{
+    margin-left:auto;
+    margin-right:auto;
+    width:92%;
+}
+.effects{
+    float:left;
+    margin-bottom:10px;
+}
+.trends{
+    float:right;
+}
+.usefulLinks{
+    float:right;    
+    padding: 1em;
+}
+.usefulLinks table{
+    text-align: center;
+    width: 16em;
+    margin-right: 7em;
+    margin-top: 2em;
+}
+.usefulLinks caption{
+    font-size: 12px;
+}
+.FeedbackForm h5 {
+    font-family: 'Overlock', cursive;
+}
+

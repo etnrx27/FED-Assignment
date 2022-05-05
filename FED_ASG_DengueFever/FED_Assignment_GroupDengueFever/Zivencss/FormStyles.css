@@ -1,0 +1,71 @@
+﻿form {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    border: 10px solid #808080;
+    background: #F4C2C2;
+}
+
+fieldset{
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    margin-left: 25px;
+}
+
+#h1form {
+    text-align: center;
+    margin-left: 25px;
+}
+
+#name, #email {
+    width: 150px;
+}
+
+#submit {
+    margin-left: 75px;
+}
+
+#formparas, #confirmmsg{
+    text-align: center;
+    margin-left: 13px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3C1053FF;
+}
+
+@media only screen and (min-width: 768px) {
+    #formparas, #confirmmsg {
+        margin-left: 13px;
+        font-size: 25px;
+    }
+    #submit {
+        margin-left: 75px;
+    }
+    label {
+        margin-left: 77px;
+        font-size: 20px;
+    }
+    #name, #email {
+        width: 195px;
+    }
+    #submit, #reset {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #submit {
+        margin-left: 248px;
+    }
+
+    label {
+        margin-left: 250px;
+    }
+    #name, #email {
+        width: 250px;
+    }
+}

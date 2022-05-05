@@ -1,0 +1,37 @@
+﻿body
+{
+    background-color:white;
+    color:black;
+}
+section {
+    background-color: #E1E1E1;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h1 {
+    color: black;
+    font-family: 'Overlock', cursive;
+}
+
+#refh1 {
+    background-color: #E94343;
+}
+p {
+    margin-right: 10px;
+    margin-left: 20px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+h3 {
+    margin-left: 20px;
+    text-shadow: 1px 1px grey;
+    font-family: 'Fredoka One', cursive;
+}
+
+/* Responsive css */
+@media screen and (max-width: 700px) {
+    .header {
+        flex-direction: column;
+    }
+}
